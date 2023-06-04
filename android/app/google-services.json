@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "203176417957",
+    "project_id": "socialv-flutter",
+    "storage_bucket": "socialv-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:203176417957:android:6d2dde980112558149cb4c",
+        "android_client_info": {
+          "package_name": "com.iconic.socialv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "203176417957-85qj4djghloja46aci7smcjtd701ea4m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgYJs0fijqzbOGCzZ_HTM8-t7NTrjOSmw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "203176417957-85qj4djghloja46aci7smcjtd701ea4m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
