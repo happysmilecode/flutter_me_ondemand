@@ -23,7 +23,6 @@ class ZegoLivePage extends StatefulWidget {
 
   final String roomID;
   final ZegoLiveRole role;
-
   @override
   State<ZegoLivePage> createState() => _ZegoLivePageState();
 }
@@ -64,7 +63,7 @@ class _ZegoLivePageState extends State<ZegoLivePage> {
             SDKKeyCenter.appID, SDKKeyCenter.serverSecret, ZEGOSDKManager.instance.localUser!.userID);
       }
       ZEGOSDKManager.instance.loginRoom(widget.roomID, token: token).then(
-        (value) {
+            (value) {
           if (value.errorCode != 0) {
             ScaffoldMessenger.of(context)
                 .showSnackBar(SnackBar(content: Text('login room failed: ${value.errorCode}')));
@@ -232,7 +231,7 @@ class _ZegoLivePageState extends State<ZegoLivePage> {
           SDKKeyCenter.appID, SDKKeyCenter.serverSecret, ZEGOSDKManager.instance.localUser!.userID);
     }
     ZEGOSDKManager.instance.loginRoom(widget.roomID, token: token).then(
-      (value) {
+          (value) {
         if (value.errorCode != 0) {
           ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('login room failed: ${value.errorCode}')));
         } else {
@@ -270,7 +269,7 @@ class _ZegoLivePageState extends State<ZegoLivePage> {
           padding: const EdgeInsets.only(left: 20, top: 50),
           child: Text(
             'RoomID: ${widget.roomID}\n'
-            'HostID: ${userInfo?.userName ?? ''}',
+                'HostID: ${userInfo?.userName ?? ''}',
             style: const TextStyle(fontSize: 16, color: Color.fromARGB(255, 104, 94, 94)),
           ),
         );

@@ -38,23 +38,25 @@
 	<key>FirebaseAppDelegateProxyEnabled</key>
 	<false/>
 	<key>GADApplicationIdentifier</key>
-    <string>ca-app-pub-8466012735057920~2016126698</string>
+	<string>ca-app-pub-8466012735057920~2016126698</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppleMusicUsageDescription</key>
 	<string>SoicalV app requires access to the photo library to upload your profile photo.</string>
 	<key>NSCameraUsageDescription</key>
 	<string>SocialV app requires access to the Camera to upload your profile photo.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>SocialV app requires address permission access to get the current location of the user instead of typing address manually.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>SocialV app requires address permission access to get the current location of the user instead of typing address manually.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>SocialV app requires address permission access to get the current location of the user instead of typing address manually.</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>SocialV app requires access to microphone when you will be used to record your speech at time of  press the &quot;Mic&quot; button.</string>
+	<string>SocialV app requires access to microphone when you will be used to record your speech at time of  press the "Mic" button.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>SocialV app requires access to the photo library to upload your profile photo.</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-    <string>SocialV app requires address permission access to get the current location of the user instead of typing address manually.</string>
-    <key>NSLocationAlwaysUsageDescription</key>
-    <string>SocialV app requires address permission access to get the current location of the user instead of typing address manually.</string>
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string>SocialV app requires address permission access to get the current location of the user instead of typing address manually.</string>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>remote-notification</string>
@@ -78,7 +80,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>UIApplicationSupportsIndirectInputEvents</key>
-	<true/>
 </dict>
 </plist>
