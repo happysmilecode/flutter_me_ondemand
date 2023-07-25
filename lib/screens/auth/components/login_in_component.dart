@@ -221,18 +221,19 @@ class _LoginInComponentState extends State<LoginInComponent> {
                         context: context,
                         text: language.login.capitalizeFirstLetter(),
                         onTap: () {
-                          if (loginFormKey.currentState!.validate()) {
-                            loginFormKey.currentState!.save();
-                            hideKeyboard(context);
-
-                            Map request = {
-                              Users.username: nameCont.text.trim().validate(),
-                              Users.password: passwordCont.text.trim().validate(),
-                            };
-                            login(req: request);
-                          } else {
-                            appStore.setLoading(false);
-                          }
+                          push(DashboardScreen(), isNewTask: true, pageRouteAnimation: PageRouteAnimation.Slide);
+                          // if (loginFormKey.currentState!.validate()) {
+                          //   loginFormKey.currentState!.save();
+                          //   hideKeyboard(context);
+                          //
+                          //   Map request = {
+                          //     Users.username: nameCont.text.trim().validate(),
+                          //     Users.password: passwordCont.text.trim().validate(),
+                          //   };
+                          //   login(req: request);
+                          // } else {
+                          //   appStore.setLoading(false);
+                          // }
                         },
                       ),
                       16.height,
